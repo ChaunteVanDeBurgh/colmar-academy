@@ -19,10 +19,6 @@ h2 {
 	font-weight: bold;
 }
 
-div {
-	border: 1px solid grey;
-}
-
 /* header section */
 
 header {
@@ -143,4 +139,12 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	width: 65%;
+}
+
+#information-right .text p {
+	padding-top: .5rem;
+}
+
+#information-right .text p:nth-child(1) {
+	color: blue;
 }
