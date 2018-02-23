@@ -6,7 +6,7 @@ html {
 
 body {
 	font-family: helvetica;
-	max-width: 100%;
+	line-height: 1.5rem;
 }
 
 h1 {
@@ -17,6 +17,12 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+.title {
+	width: 100%;
+	padding-top: 2rem;
+	text-align: center;
 }
 
 /* header section */
@@ -122,6 +128,7 @@ main {
 #information-right {
 	display: flex;
 	flex-direction: column;
+	padding-top: 1rem;
 }
 
 #information-right .more-info {
@@ -139,6 +146,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	width: 65%;
+	padding-right: 1.5rem;
 }
 
 #information-right .text p {
@@ -147,4 +155,116 @@ main {
 
 #information-right .text p:nth-child(1) {
 	color: blue;
+}
+
+/* course section */
+#course-section {
+	background-color: lightgrey;
+}
+
+#courses {
+	max-width: 100%;
+	padding: 2rem 2.5rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.course {
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	background-color: white;
+}
+
+.course img {
+	width: 100%;
+	height: auto;
+}
+
+.course h2 {
+	padding: 1rem;
+}
+
+.course p {
+	padding-left: 1rem;
+}
+
+.course p:nth-child(4) {
+	padding-top: .5rem;
+	padding-bottom: 1.5rem;
+}
+
+#thesis-info {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#thesis-left {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1.5rem;
+	width: 60%;
+}
+
+#thesis-left video {
+	width: 100%;
+	padding-right: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+#thesis-left p {
+	padding-top: .5rem;
+}
+
+#thesis-right {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.thesis-right {
+	display: flex;
+	height: 11.5rem;
+}
+
+.thesis-right img {
+	display: flex;
+	width: 35%;
+	height: auto;
+	padding-top: .5rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+}
+
+.thesis-right .more-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.thesis-right .more-info p {
+	padding-top: .5rem;
+}
+
+footer {
+	padding: 1rem 1.5rem;
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid grey;
+	font-size: .8rem;
+}
+
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	display: inline-flex;
 }
