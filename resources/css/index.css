@@ -31,7 +31,7 @@ h2 {
 	display: none;
 }
 
-header {
+#header-desktop {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -63,15 +63,15 @@ li {
 /* mobile header */ 
 
 @media only screen and (max-width: 560px) {
-	header {
+	#header-desktop {
 		display: none;
 	}
 
 	#header-mobile {
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		height: 4rem;
-		align-content: center;
 	}
 }
 
