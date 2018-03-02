@@ -1,5 +1,4 @@
 /* universal styles */
-
 html {
 	font-size: 16px;	
 }
@@ -114,6 +113,42 @@ main {
 	margin-top: 1.5rem;
 }
 
+/* mobile banner */
+
+@media only screen and (max-width: 560px) {
+	#banner {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		height: auto;
+		padding: 0rem 0rem;
+	}
+
+	#banner .content {
+		width: 100%;
+	}
+
+	#banner .content h1 {
+		padding: 2rem 1rem;
+	}
+
+	#banner .content p {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-bottom: 1.5rem;
+	}
+
+	#banner .button {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+		width: auto;
+	}
+}
+
 /* information section */
 
 #information-main {
@@ -176,7 +211,16 @@ main {
 	color: blue;
 }
 
+/* mobile information */
+
+@media screen and (max-width: 560px) {
+	#information-left {
+		display: none;
+	}
+}
+
 /* course section */
+
 #course-section {
 	background-color: lightgrey;
 }
