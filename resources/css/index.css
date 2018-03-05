@@ -189,7 +189,7 @@ main {
 	display: flex;
 }
 
-#information-right img {
+#information-right img.pc {
 	width: 35%;
 	height: auto;
 	padding: 1rem 1rem;
@@ -225,7 +225,7 @@ main {
 	#information-right .more-info {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	#information-right img.pc {
@@ -237,8 +237,13 @@ main {
 		width: 100%;
 		height: auto;
 	}
-}
 
+	#information-right .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
 /* course section */
 
 #course-section {
