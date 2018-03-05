@@ -218,6 +218,10 @@ main {
 /* mobile information */
 
 @media screen and (max-width: 560px) {
+	#information-main {
+		height: auto;
+	}
+
 	#information-left {
 		display: none;
 	}
