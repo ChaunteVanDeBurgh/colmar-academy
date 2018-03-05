@@ -211,11 +211,31 @@ main {
 	color: blue;
 }
 
+#information-right img.mobile {
+	display: none;
+}
+
 /* mobile information */
 
 @media screen and (max-width: 560px) {
 	#information-left {
 		display: none;
+	}
+
+	#information-right .more-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	#information-right img.pc {
+		display: none;
+	}
+
+	#information-right img.mobile {
+		display: flex;
+		width: 100%;
+		height: auto;
 	}
 }
 
