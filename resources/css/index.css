@@ -61,6 +61,9 @@ li {
 
 header nav ul li:hover {
 	color: rgb(53, 77, 255);
+	font-weight: bold;
+	transition-property: color;
+	transition-duration: .6s;
 }
 
 /* header mobile */ 
@@ -122,6 +125,8 @@ main {
 
 #banner .button a:hover {
 	background-color: rgb(53, 77, 255);
+	transition-property: background-color;
+	transition-duration: .5s;
 }
 
 /* banner mobile */
@@ -193,7 +198,7 @@ main {
 #information-right {
 	display: flex;
 	flex-direction: column;
-	padding-top: 1rem;
+	padding-top: 1.9rem;
 }
 
 #information-right .more-info {
