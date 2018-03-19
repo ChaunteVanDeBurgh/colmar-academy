@@ -1,13 +1,16 @@
 ***** Issues *****
-	
-	add meta data
 
 	add logo (favicon)
 
-	animate hover effect for links (chek it's mobile view)
+	animate active psudo state for mobile view on links
 
-	alter pixel breaking point to the same as bootstrap
+	fix squished images 
 
-	color backgrounds lighter grey
+	fix horizontal scroll issue on mobile view. box-sizing? 
+
+	add meta data
+
+
+
 
 	

@@ -46,6 +46,10 @@ header div {
 	height: 2rem;
 }
 
+.logo span {
+	font-weight: bold;
+}
+
 header nav {
 	display: flex;
 	align-items: center;
@@ -56,19 +60,20 @@ header nav ul {
 }
 
 li {
-	padding-right: 1rem;
+	padding: .5rem;
 }
 
 header nav ul li:hover {
 	color: rgb(53, 77, 255);
-	font-weight: bold;
-	transition-property: color;
+	border: 1px solid rgb(53, 77, 255);
+	border-radius: 10px;
+	transition-property: color border;
 	transition-duration: .6s;
 }
 
 /* header mobile */ 
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
 	#header-desktop {
 		display: none;
 	}
@@ -131,7 +136,7 @@ main {
 
 /* banner mobile */
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
 	#banner {
 		flex-wrap: wrap;
 		width: 100%;
@@ -188,6 +193,7 @@ main {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	width: 90%;
+	overflow: scroll;
 }
 
 #information-left .text p {
@@ -246,7 +252,7 @@ main {
 
 /* information mobile */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
 	#information-main {
 		width: 100%;
 		height: auto;
@@ -323,7 +329,7 @@ main {
 
 /* course mobile */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
 	#course-section {
 		background-color: white;
 	}
@@ -379,6 +385,7 @@ main {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
+	margin-left: 1rem;
 }
 
 .thesis-right {
@@ -390,10 +397,7 @@ main {
 	display: flex;
 	width: 35%;
 	height: auto;
-	padding-top: .5rem;
-	padding-right: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 1rem;
+	padding: 1rem;	
 }
 
 .thesis-right .more-info {
@@ -406,9 +410,17 @@ main {
 	padding-top: .5rem;
 }
 
+.thesis-right:nth-child(1) {
+	background-color: rgba(192,192,192, .5);
+}
+
+.thesis-right:hover {
+	background-color: rgb(137, 182, 255);
+}
+
 /* thesis mobile */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
 	#thesis-info #thesis-text {
 		display: none;
 	}
@@ -450,7 +462,7 @@ footer ul li {
 
 /* footer mobile */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
 	footer ul {
 		display: none;
 	}
